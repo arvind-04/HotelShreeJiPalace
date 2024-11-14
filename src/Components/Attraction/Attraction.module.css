@@ -1,0 +1,125 @@
+.attraction_wrapper {
+    padding: 50px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+.section{
+    padding: 90px 15%;
+}
+.section_Heading {
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.section_Title {
+    font-size: 36px;
+    margin: 10px 0 30px;
+}
+
+.section_Title span {
+    color: #d32f2f; /* Custom color for highlighted word */
+}
+
+.swiper {
+    width: 100% !important;
+}
+
+.attraction_item {
+    position: relative; /* Enable absolute positioning for content */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To hide overflow of content if needed */
+}
+
+.attraction_item img {
+    width: 100%; /* Make image take full width */
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image_container {
+    position: relative;
+    width: 50%; /* Image takes up 50% of the width */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0; /* Position content at the bottom of the image */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.content p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #ddd;
+}
+
+.content button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content button:hover {
+    background-color: #b71c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .content h2 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content h2 {
+        font-size: 18px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .attraction_item {
+        flex-direction: column;
+    }
+
+    .image_container, .content {
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+        padding: 15px 20px;
+    }
+}

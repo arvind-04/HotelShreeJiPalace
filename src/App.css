@@ -1,0 +1,7 @@
+.app-background {
+    background-color: rgb(255, 245, 232); /* Replace with your desired background color */
+    color: rgb(103, 20, 15); /* Optional: Set a default text color for better contrast */
+    min-height: 100vh;
+    padding: 20px 0; /* Optional: Adjust top/bottom padding if needed */
+    box-sizing: border-box;
+}
