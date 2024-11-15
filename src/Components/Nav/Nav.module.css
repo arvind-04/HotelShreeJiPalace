@@ -11,7 +11,7 @@
     z-index: 99;
     transition: background-color 0.3s ease;
 }
-.nav_wrapper .logo {
+.nav_wrapper .logo span {
     font-size: 25px;
     font-weight: 700;
     color: white;
