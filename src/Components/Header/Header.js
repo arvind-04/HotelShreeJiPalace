@@ -8,20 +8,20 @@ const slidesData = [
   {
     slideClass: headerCSS.slide1,
     title: "Enjoy Your Dream Time with Luxury Experience",
-    smallText: "Luxury Hotel & Restaurant Website",
-    callText: "Call Now 7877899144"
+    smallText: "Hotel ShreeJi Palace & Restaurant",
+    callText: "Call Now 8949098841"
   },
   {
     slideClass: headerCSS.slide2,
     title: "Enjoy Your Dream Time with Luxury Experience",
-    smallText: "Luxury Hotel & Restaurant Website",
-    callText: "Call Now 7877899144"
+    smallText: "Hotel ShreeJi Palace & Restaurant",
+    callText: "Call Now 8949098841"
   },
   {
     slideClass: headerCSS.slide3,
     title: "Enjoy Your Dream Time with Luxury Experience",
-    smallText: "Luxury Hotel & Restaurant Website",
-    callText: "Call Now 7877899144"
+    smallText: "Hotel ShreeJi Palace & Restaurant",
+    callText: "Call Now 8949098841"
   },
 ];
 

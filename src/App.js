@@ -14,16 +14,47 @@ import Testimonial from './Components/Testimonials/Testimonial';
 function App() {
   return (
     <div className="app-background">
-      <Nav />
-      <Introduction />
-      <Header />
-      <About />
-      <Attraction />
-      <Services />
-      <Rooms />
-      <Amenities />
-      <Testimonial />
-      <Footer />
+      {/* You can still use Router if you plan to add separate pages later */}
+      <Router>
+        <div id="home">
+          <Nav />
+        </div>
+        <div id="introduction">
+          <Introduction />
+        </div>
+        
+        <div id="header">
+          <Header />
+        </div>
+
+        <div id="about">
+          <About />
+        </div>
+
+        <div id="attraction">
+          <Attraction />
+        </div>
+
+        <div id="services">
+          <Services />
+        </div>
+
+        <div id="rooms">
+          <Rooms />
+        </div>
+
+        <div id="amenities">
+          <Amenities />
+        </div>
+
+        <div id="testimonials">
+          <Testimonial />
+        </div>
+
+        <div id="footer">
+          <Footer />
+        </div>
+      </Router>
     </div>
   );
 }

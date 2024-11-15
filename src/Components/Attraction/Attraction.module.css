@@ -1,28 +1,6 @@
-.attraction_wrapper {
-    padding: 50px;
-    /* background-color: #f9f9f9; */
-    text-align: center;
-}
-.section{
-    padding: 90px 15%;
-}
-.section_Heading {
-    font-size: 18px;
-    color: #888;
-    text-transform: uppercase;
-}
-
-.section_Title {
-    font-size: 36px;
-    margin: 10px 0 30px;
-}
-
-.section_Title span {
-    color: #d32f2f; /* Custom color for highlighted word */
-}
-
 .swiper {
     width: 100% !important;
+    height: 600px; /* Increase the height to make the slides larger */
 }
 
 .attraction_item {
@@ -35,21 +13,22 @@
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* To hide overflow of content if needed */
-}
-
-.attraction_item img {
-    width: 100%; /* Make image take full width */
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
+    overflow: hidden;
+    height: 100%; /* Ensure attraction item fills the entire Swiper */
 }
 
 .image_container {
     position: relative;
     width: 50%; /* Image takes up 50% of the width */
+    height: 100%; /* Fix the height of the image container */
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+
+.attraction_item img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the entire container */
+    object-fit: cover; /* Keep the aspect ratio intact while filling the container */
 }
 
 .content {

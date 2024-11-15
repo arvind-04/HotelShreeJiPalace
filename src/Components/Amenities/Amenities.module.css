@@ -1,11 +1,12 @@
 .amenities_wrapper {
     padding: 50px;
-    /* background-color: #f9f9f9; */
     text-align: center;
 }
-.section{
+
+.section {
     padding: 90px 15%;
 }
+
 .section_Heading {
     font-size: 18px;
     color: #888;
@@ -23,6 +24,7 @@
 
 .swiper {
     width: 100% !important;
+    height: 600px; /* Increased height to make slides 1.5x larger */
 }
 
 .amenities_item {
@@ -34,11 +36,12 @@
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Enables absolute positioning of heading */
+    position: relative;
+    height: 100%; /* Ensure item fills the entire Swiper */
 }
 
 .amenities_item img {
-    width: 60%; /* Adjust width to 60% */
+    width: 60%; /* Keep image at 60% width */
     height: auto;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -50,31 +53,31 @@
 .content {
     display: flex;
     flex-direction: column;
-    width: 40%; /* Ensure it takes up remaining space */
+    width: 40%; /* Takes up remaining space */
     text-align: left;
     gap: 20px;
     padding-left: 20px;
 }
 
 .content h2 {
-    font-size: 28px;
+    font-size: 36px; /* Increase heading size */
     color: #333;
     position: relative;
-    margin-left: -80px; /* Negative margin to overlap onto image */
-    z-index: 1; /* Ensures it sits on top of the image */
-    /* background-color: rgba(255, 255, 255, 0.8); Light background for readability */
+    margin-left: -100px; /* Negative margin to overlap image */
+    z-index: 1; /* Ensure heading sits on top of the image */
     padding: 5px 10px;
+    -webkit-text-stroke: 1px #fff; /* Add text stroke for better visibility */
 }
 
 .content p {
-    font-size: 16px;
+    font-size: 18px; /* Increase paragraph text size */
     color: #555;
 }
 
 .content button {
     align-self: start;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px; /* Increase padding for larger buttons */
+    font-size: 18px;
     color: #fff;
     background-color: #d32f2f;
     border: none;
@@ -90,21 +93,21 @@
 /* Responsive Design */
 @media screen and (max-width: 1200px) {
     .content h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .content p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 900px) {
     .content h2 {
-        font-size: 22px;
+        font-size: 26px;
     }
-    
+
     .content p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -115,16 +118,10 @@
 
     .amenities_item img,
     .content {
-        width: 100%; /* Full width for each section on small screens */
+        width: 100%; /* Full width on small screens */
     }
 
     .content {
-        text-align: center; /* Center text for smaller screens */
+        text-align: center; /* Center text on small screens */
     }
-}
-
-.content h2{
-    font-size: 66px ;
-    margin-left: -100px;
-    -webkit-text-stroke: 1px #fff;
 }

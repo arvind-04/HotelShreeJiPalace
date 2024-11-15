@@ -38,7 +38,7 @@
 }
 
 .Card_front {
-    background: url(./../../Assests/backimg.jpg) no-repeat center center; /* Center the image */
+    background: url(./../../Assests/r1.jpg) no-repeat center center; /* Center the image */
     background-size: cover; /* Make sure the image fills the card */
 }
 
@@ -48,7 +48,7 @@
 }
 
 .Card_Back {
-    background: url(./../../Assests/backimg.jpg) no-repeat center center; /* Center the image */
+    background: url(./../../Assests/r1.jpg) no-repeat center center; /* Center the image */
     background-size: cover; /* Make sure the image fills the card */
     transform: rotateY(180deg);
     z-index: 1;

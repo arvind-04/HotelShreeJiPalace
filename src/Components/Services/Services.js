@@ -35,8 +35,8 @@ export default function Services() {
                 <i className="ri-restaurant-line"></i>
                 <h3>Special Features</h3>
                 <p>- Custom Rooms</p>
-                <p>- Cricket Ground</p>
-                <p>- Gym</p>
+                <p>- Party</p>
+                <p>- Get Together</p>
             </div>
         </div>
     </div>

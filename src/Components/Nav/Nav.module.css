@@ -9,8 +9,17 @@
     position: fixed;
     top: 0;
     z-index: 99;
+    transition: background-color 0.3s ease;
+}
+.nav_wrapper .logo a {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
 }
 
+.nav_wrapper .logo a span {
+    color: #4f3520;
+}
 .nav_wrapper::after {
     content: "";
     position: absolute;
@@ -27,13 +36,15 @@
 }
 
 .nav_wrapper .logo a {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 35px;
+   
     color: white;
 }
 
 .nav_wrapper .logo a span {
-    color: #4f3520;
+    color: #9d7e54;
+    font-weight: 100;
+    font-family: 'Lavishly Yours', cursive;
 }
 
 /* Remove bullets and extra spacing */
@@ -67,17 +78,25 @@
     background-color: #df8033;
 }
 
-.Nav_btns {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-}
-
+/* Styling for navigation links */
 .nav_wrapper ul li a {
     color: #fff;
     font-weight: 500;
     font-family: 'Poppins';
     font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav_wrapper ul li a:hover {
+    color: #df8033;
+}
+
+/* Button for menu toggle */
+.Nav_btns {
+    display: flex;
+    gap: 18px;
+    align-items: center;
 }
 
 #bars {
@@ -147,20 +166,12 @@
     transition: 0.3s;
 }
 
-@media screen and (max-width: 1200px) {
-    .nav_wrapper ul {
-        display: none;
-    }
+/* For smooth scrolling between sections */
+html {
+    scroll-behavior: smooth;
+}
 
-    .nav_wrapper ul.showNav {
-        display: block;
-    }
-
-    .nav_wrapper ul li {
-        display: block;
-        margin: 5px 0;
-        padding: 25px 0;
-        padding-left: 15%;
-        border-bottom: 1px solid rgba(131, 131, 131, 0.4);
-    }
+/* Optional: Change background color of navbar when scrolling */
+.navbarScroll {
+    background: #1e1e1e;
 }

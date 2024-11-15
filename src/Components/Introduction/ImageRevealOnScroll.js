@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './ImageRevealOnScroll.css';
-import img1 from './../../Assests/shreeji.png';
+import img1 from './../../Assests/shreeji.png'; // Image file location
 
 const ImageRevealOnScroll = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -29,6 +29,21 @@ const ImageRevealOnScroll = () => {
 
     return (
         <div className="image-container">
+            {/* Greeting message above the image */}
+            <div className="greeting-message">
+                <h2>Welcome to <span>Hotel Shree Ji Palace</span></h2>
+                <p>Experience <span>the luxury and comfort like never before</span></p>
+            </div>
+            <br></br>
+            <br />
+            <br /> <br></br>
+            <br />
+            <br /> <br></br>
+            <br />
+            <br />
+            <br />
+            
+            {/* Image with scroll reveal effect */}
             <div 
                 className={`image ${isVisible ? 'visible' : ''}`} 
                 ref={imageRef}

@@ -5,14 +5,15 @@
 
 .about_img {
     width: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about_img img {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     object-fit: cover; /* Ensures image maintains aspect ratio */
     border-radius: 10px; /* Optional: rounded corners */
 }
@@ -57,10 +58,29 @@
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Flex container to align the CountUp and "+" symbol on the same line */
+.countContainer {
+    display: inline-flex; /* Use flexbox to keep them in a line */
+    align-items: center; /* Align vertically */
+    font-family: 'Poppins', sans-serif; /* Ensure same font */
+}
+
+.plusSymbol {
+    font-size: 1.5rem; /* Adjust size to match the count-up font */
+    margin-left: 0.25rem; /* Slight spacing between number and plus sign */
+}
+
+/* Styling for CountUp numbers */
+.Cards p CountUp {
+    font-size: 35px;
+    display: block;
+}
+
+/* Styling for text under the CountUp (Awards, Visits, Events) */
 .Cards p span {
     font-size: 15px;
     display: block;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 1400px) {
@@ -94,9 +114,11 @@
         grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
     }
 }
-.section{
+
+.section {
     padding: 90px 15%;
 }
+
 @media screen and (max-width: 768px) {
     .Cards {
         grid-template-columns: repeat(1, 1fr);

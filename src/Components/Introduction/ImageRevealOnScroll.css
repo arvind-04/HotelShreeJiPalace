@@ -1,14 +1,43 @@
 .image-container {
     height: 150vh; /* Extra height to allow for scrolling */
     display: flex;
+    flex-direction: column; /* To stack greeting message above the image */
     align-items: center;
     justify-content: center;
-    /* background-color: black; */
 }
 
+.greeting-message {
+    text-align: center;
+    
+    margin-bottom: 20px;
+    margin-top: 0; /* Space between greeting and image */
+    font-family: 'Poppins', sans-serif;
+}
+
+.greeting-message h2 {
+    font-size: 5rem;
+    font-weight: 100;
+    color: #a22a2a;
+    font-family: 'Lavishly Yours', cursive;
+}
+.greeting-message h2 span{
+    font-weight: 100;
+    color: #9d7e54;
+    font-family: 'Lavishly Yours', cursive;
+}
+
+.greeting-message p {
+    font-size: 2.2rem;
+    color: #a22a2a;
+    font-family: 'Lavishly Yours', cursive;
+}
+.greeting-message p span{
+    color: #9d7e54;
+    font-family: 'Lavishly Yours', cursive;
+}
 .image {
     opacity: 0;
-    transition: opacity 3s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .image.visible {
