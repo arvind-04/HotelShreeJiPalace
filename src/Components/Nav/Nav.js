@@ -45,7 +45,7 @@ export default function Nav() {
   return (
     <nav className={navCSS.nav_wrapper} ref={navbar}>
       <div className={navCSS.logo}>
-        <a href="#"><span>ShreeJiPalace</span></a>
+        <span>ShreeJiPalace</span>
       </div>
       <ul ref={menuRef} className={`${navCSS.menu} ${isMenuVisible ? navCSS.showNav : ''}`}>
         <li>

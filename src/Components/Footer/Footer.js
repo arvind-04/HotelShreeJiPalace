@@ -47,7 +47,7 @@ export default function Footer() {
       
       <img 
         src={img}
-        alt="Decorative Footer Image" 
+        alt="" 
         className={footerCSS.footerImage} 
       />
     </>
